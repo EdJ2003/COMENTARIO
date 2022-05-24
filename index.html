@@ -1,133 +1,309 @@
-<!doctype html>
-<html lang="es">
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <head>
-
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="shortcut icon" type="image/x-icon" href="images/IconoV.ico">
-    <title>DATOS_050522</title>
-    <!-- Bootstrap CSS -->
+	<title>La mujer informática</title>
+	<!-- Bootstrap CSS -->
     <link type="text/css" rel="stylesheet" href="css/bootstrap.min.css">
     <!-- Estilos -->
-    <link href="css/BaseDC.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">	
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+   <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet" />
     <!-- Chart.js -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.1/chart.js" integrity="sha512-Lii3WMtgA0C0qmmkdCpsG0Gjr6M0ajRyQRQSbTF6BsrVh/nhZdHpVZ76iMIPvQwz1eoXC3DmAg9K51qT5/dEVg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.1/chart.js" integrity="sha512-Lii3WMtgA0C0qmmkdCpsG0Gjr6M0ajRyQRQSbTF6BsrVh/nhZdHpVZ76iMIPvQwz1eoXC3DmAg9K51qT5/dEVg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
 
-  </head>
+<body id="page-top">
 
-  <body class="d-flex h-100 text-center text-white bg-secondary">
+        <!--- BARRA DE NAVEGACIÓN --->
 
-    <div class="cover-container d-flex w-100 h-100 p-2 mx-auto flex-column">
-      
-      <header class="mb-auto">
-        <div>
-          <h2>Levantamiento y visualización de datos</h2>
-          <h4>Sesión de clase - jueves 05-05-2022</h4>
-          <br>
-        </div>
-      </header>
+   		<nav class="navbar fixed-top navbar-light bg-light">
+			  <div class="container-fluid">
+			    <a class="navbar-brand" href="#">HOME</a>
+			    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+			      <span class="navbar-toggler-icon"></span>
+			    </button>
+			    <div class="collapse navbar-collapse" id="navbarNav">
+			      <ul class="navbar-nav">
+			        <li class="nav-item">
+			          <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+			        </li>
+			        <li class="nav-item">
+			          <a class="nav-link" href="#about">Resumen</a>
+			        </li>
+			        <li class="nav-item">
+			          <a class="nav-link" href="#resultados">Resultados</a>
+			        </li>
+			        <li class="nav-item">
+			          <a class="nav-link" href="#conclusiones">Conclusiones</a>
+			        </li>
+			      </ul>
+			    </div>
+			  </div>
+		</nav>
 
-      <main class="px-3">
-        <h3>1. Data Collection</h3>
-        <p class="lead">Es el proceso de recopilación y medición de los datos correspondientes a variables específicas en un sistema establecido, lo que permite responder a las preguntas relacionadas y evaluar resultados.</p>
-        <p class="lead"> <img src="images/R_Datos.png" class="img-fluid" alt="R_Datos"> </p>
-        <p class="lead"> <iframe src=https://ee.humanitarianresponse.info/i/EV9kMXxu width="624" height="428"> </iframe> </p>
-        <p class="lead"> <a target="_blank" href="https://www.kobotoolbox.org/#home" class="btn btn-lg btn-primary fw-bold border-white bg-white">KoBotoolbox</a> </p>
-        <!-- Sección Visualizacion de datos -->
-        <br>
-        <h3>2. Visualización de datos</h3>
-        <p class="lead">La visualización de datos acelera el proceso de toma de decisiones debido a nuestra capacidad de comprenderlos en forma gráfica, entonces la visualización de datos favorece los procesos de toma de decisiones con mayor posibilidad de acierto.</p>
-        <p class="lead"> <a target="_blank" href="https://www.chartjs.org/" class="btn btn-lg btn-primary fw-bold border-white bg-white">Chartjs</a> </p>
-        <h4>Mi Primera Grafica</h4>
-        <p class="lead"> <canvas class="bg-white" id="Mi1Gr" width="300" height="200"> </canvas> </p>
-        <h4>Mi Segunda Grafica</h4>
-        <p class="lead"> <canvas class="bg-white" id="Mi2Gr"> </canvas> </p>  
-      </main>
+     <!---INTRODUCCIÓN --->
 
-      <footer class="mt-auto text-white-50">
-        <p>Programación de nuevas tecnologías - <a href="https://www.unisabana.edu.co/" class="text-white">Universidad de la Sabana</a>, JPFR, 05-05-2022.</p>
-      </footer>
+        <header class="fondos1">
+            <div class="container px-4 px-lg-5 d-flex h-100 align-items-center justify-content-center">
+                <div class="d-flex justify-content-center">
+                    <div class="text-center">
+                        <h1 class="mx-auto my-0 text-uppercase">LA MUJER EN LA INFORMÁTICA</h1>
+                        <h2 class="text-white-50 mx-auto mt-2 mb-5">¿Por qué hay tan pocas en la carrera? Que depara el futuro para ellas?</h2>
+                        <a class="btn btn-primary" href="#about">Vamos a averiguarlo</a>
+                    </div>
+                </div>
+            </div>
+        </header>
 
-    </div>
+        <!-- RESUMEN-->
+        <section class="about-section text-center" id="about">
+            <div class="container px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-lg-8">
+                        <h2 class="text-white mb-4">Resumen</h2>
+                        <p class="text-white-50">
+                            En primera estancia tomamos como punto de partida el artículo escrito por Ricardo Pérez del Castillo, en donde se nos dan unas posibles razones a las cuáles el por qué las niñas evitan carreras relacionadas con la informática que usualmente están relacionadas con ciertos estereotipos o compartamientos que se dan durante la crianza femenia, o en otros casos más menos agradables por falacias hacía ese género. Con el propósito de descubrir un poco más acerca de este panórama en la realidad Colombiana (más específicamente en la universidad de la Sábana), se realizó una sencilla de cuatro preguntas que se tomará como material de referencia para analizar las distintas razones por las cuales se presenta esta situación y finalmente encontrar una posible solución y comentar acerca de las soluciones que ya se están implementando.
+                        </p>
+                    </div>
+                </div>
+                <img class="img-fluid" src="assets/img/code.png" alt="..." style="width: 320px;" />
+            </div>
+        </section>
 
-    <script src="js/bootstrap.bundle.min.js"></script>
+         <!---RESULTADOS --->
 
-  </body>
+        <section class="projects-section bg-light" id="resultados">
+            <div class="container px-4 px-lg-5">
+                <!-- Featured Project Row-->
+                <div class="row gx-0 mb-4 mb-lg-5 align-items-center">
+                    <div class="col-xl-8 col-lg-7"><iframe src=https://ee.kobotoolbox.org/i/iFnUYIxh width="700" height="600"></iframe></div>
+                    <div class="col-xl-4 col-lg-5">
+                        <div class="featured-text text-justify text-lg-justify">
+                            <h4>Encuesta</h4>
+                            <p class="text-black-50 mb-0">Se realizó una encuesta sencilla de 4 preguntas, esta encuesta tiene 2 objetivos: El primero es identificar cuantos hombres y mujeres contestaron la encuesta, de esta manera no solo podemos definir de manera cuantitativa el número de mujeres presente en una clase de ingeniería informática, si no que también se puede obtener diferente perspectivas de como ven ambos géneros esta problemática. Las preguntas siguiente se hacen con el segundo objetivo de definir el conocimiento frente al problema planteado y unas posibles soluciones. </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project One Row-->
+                <div class="row gx-0 mb-5 mb-lg-0 justify-content-center">
+                    <div class="col-lg-6"><canvas class="bg-white" id="Mi1Gr" width="200" height="120"></canvas></div>
 
-  <script>
-    var ctx=document.getElementById("Mi1Gr").getContext("2d");
-    var MiPGr=new Chart(ctx,
-    {
-        type:"bar",
-        data:
-        {
-          labels:['Curso #1','Curso #2','Curso #3','Curso #4'],
-          datasets:
-          [{
-            barThickness: 100,
-              label:'Estudiantes',
-                  data:[5,2,7,6],
-                  backgroundColor:
-                  [
-                      'rgb(255,255,0,0.7)',
-                      'rgb(0,255,255,0.7)',
-                      'rgb(255,0,255,0.7)'
-                  ],
-                  borderColor: 
-                  [
-                    'rgb(0,255,0)',
-                    'rgb(0,0,255)',
-                    'rgb(255,0,0)'
-                  ],
-                  borderWidth: 2
-          }]
-        },
-        options:
-        {
-          scales:
-          {
-            yAxes:
-            [{
-              ticks:
-              {
-                beginAtZero:true
-              }
-            }]
-        }}
-    });
+                    <div class="col-lg-6">
+                        <div class="bg-black text-center h-100 project">
+                            <div class="d-flex h-100">
+                                <div class="project-text w-100 my-auto text-center text-lg-left">
+                                    <h4 class="text-white">Número de hombres mayor</h4>
+                                    <p class="mb-0 text-white-50">Aquí se puede evidenciar, en la primera pregunta que hay una mayoría del género másculino en la carrera</p>
+                                    <hr class="d-none d-lg-block mb-0 ms-0" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-    var ctx=document.getElementById("Mi2Gr").getContext("2d");
-    var MiSGr=new Chart(ctx,
-    {
-        type:"polarArea",
-        data:
-        {
-          labels:['Area #1','Area #2','Area #3','Area #4'],
-          datasets:
-          [{
-              label:'Areas',
-              data:[8,22,35,40],
-              backgroundColor:
-              [
-                  'rgb(255,100,100,1)',
-                  'rgb(100,255,100,1)',
-                  'rgb(100,100,255,1)',
-                  'rgb(100,100,100,0.8)'
-              ],
-              borderColor: 
-              [
-                'rgb(255,0,0)',
-                'rgb(0,255,0)',
-                'rgb(0,0,255)',
-                'rgb(0,0, 0)'
-              ],
-              borderWidth: 3
-          }]
-        },
-    });
-  </script>
+                <div class="row gx-0 justify-content-center">
+                    <div class="col-lg-6"><img class="img-fluid" src="assets/img/demo-image-02.jpg" alt="..." /></div>
+                    <div class="col-lg-6 order-lg-first">
+                        <div class="bg-black text-center h-100 project">
+                            <div class="d-flex h-100">
+                                <div class="project-text w-100 my-auto text-center text-lg-right">
+                                    <h4 class="text-white">¿Conoce a mujeres cursando alguna carrera relacionada con la informática?</h4>
+                                    <p class="mb-0 text-white-50">En esta pregunta, con un 100% de respuesta afirmativa, se puede deicir que hay una constante y cada hombre conoce por lo menos a una mujer cursando ingeniería informática</p>
+                                    <hr class="d-none d-lg-block mb-0 me-0" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
+
+                <div class="row gx-0 mb-5 mb-lg-0 justify-content-center">
+                    <div class="col-lg-6"><canvas class="bg-white" id="Mi2Gr" width="180" height="100"> </canvas></div>
+                    <div class="col-lg-6">
+                        <div class="bg-black text-center h-100 project">
+                            <div class="d-flex h-100">
+                                <div class="project-text w-100 my-auto text-center text-lg-left">
+                                    <h4 class="text-white">Razones</h4>
+                                    <p class="mb-0 text-white-50">En en este gráfico podemos ver que la mayoría de personas ven como principal causa del poco número de mujeres informáticas el estereotipo creado al rededor de la carrera, lo cúal deja una ver una realidad un poco preocupante en la sociedad actual.</p>
+                                    <hr class="d-none d-lg-block mb-0 ms-0" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row gx-0 justify-content-center">
+                    <div class="col-lg-6"><canvas class="bg-white" id="Mi3Gr" width="200" height="120"></div>
+                    <div class="col-lg-6 order-lg-first">
+                        <div class="bg-black text-center h-100 project">
+                            <div class="d-flex h-100">
+                                <div class="project-text w-100 my-auto text-center text-lg-right">
+                                    <h4 class="text-white">Motivaciones</h4>
+                                    <p class="mb-0 text-white-50">De acuerdo a los resultados obtenidos y haciendo un aproximado con los resultados, se puede observar que para los jóvenes y estudiantes de ingeniería informática, quienes son la población objetivo de esta encuesta, el mayor factor que motiva a alguien a estudiar una carrera informática es la enseñanza básica de conceptos informáticos desde la escuela, seguida del contacto cercano con la tecnología a temprana edad.</p>
+                                    <hr class="d-none d-lg-block mb-0 me-0" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- CONCLUSIONES --->
+        
+        <section class="about-section text-center" id="conclusiones">
+            <div class="container px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-lg-8">
+                        <h2 class="text-white mb-4">Conclusiones</h2>
+                        <p class="text-white-50">
+                            Con los resultados anteriores ya podemos tener una certera conclusión acerca de la problemática que se está presentando, para empezar, la principal claro está, es que la principal causa de el poco número de mujeres en la informática se debe a los prejucios que la sociedad ha establecido para determinadas carreras, prejuicios que, al estar establecidas en la sociedad se establecen de igual manera en las familias que la conforman y generan esa crianza que aleja a las mujeres de este tipo de carreras. De igual manera, estos prejuicios son los mismos que se obstaculicen las motivaciones que los jóvenes consideran importantes para el desarrollo del interés por este tipo de programas pues el contacto con la tecnología y el desarrollo de estas habilidades deben ser ya una obligación hoy en día, es por ello que la mayor conclusión a la que se puede llegar es que se debe reestructurar el esquema que se tiene asignado para los pregrados informáticos.
+                        </p>
+                        
+                        <h2 class="text-white mb-4">¿Cómo solucionarlo?</h2>
+
+                        <p class="text-white-50">
+                          Tomando como referencia la IEEE Women in Engineering que tiene como misión brindar mayores oportunidades a las mujeres en disciplinas técnicas a nivel mundial, se puede encontrar una posible solución al problema: La creación de oportunidades. Entre más oportunidades haya, más visibilidad se le da al papel de las mujeres y su desempeño dentro de estas áreas, crando así un círculo en el que se motiva a más mujeres a aplicar para campos laborales informáticos, que a su vez, crean una mejor imagen y elimina de a poco los estereotipos establecidos. El futuro de las mujeres en la informática es brillante y poco a poco se está reduciendo el factor clave que dificultaba su crecimiento en el pasado; con la apertura de nuevas oportunidades para cientos de mujeres, la motivación se incrementa paso a paso.
+                        </p>
+
+                        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+						  <div class="carousel-inner">
+						    <div class="carousel-item active">
+						      <img src="assets/img/img1.jpg" class="d-block w-100" alt="...">
+						    </div>
+						    <div class="carousel-item">
+						      <img src="assets/img/img2.png" class="d-block w-100" alt="...">
+						    </div>
+						    <div class="carousel-item">
+						      <img src="assets/img/img3.png" class="d-block w-100" alt="..." width="550px" height="340px">
+						    </div>
+						  </div>
+						  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+						    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+						    <span class="visually-hidden">Previous</span>
+						  </button>
+						  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+						    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+						    <span class="visually-hidden">Next</span>
+						  </button>
+						</div>
+                    </div>
+                </div>
+                <img class="img-fluid" src="assets/img/ipad.png" alt="..." />
+            </div>
+        </section>
+
+         <footer class="footer bg-black small text-center text-white-50"><div class="container px-4 px-lg-5">Copyright &copy; Eduen José Flórez Mariño</div><div class="container px-4 px-lg-5">Bibliografía: <a href="https://theconversation.com/por-que-las-ninas-no-quieren-ser-informaticas-179920">Mujeres en la informática</a>, <a href="https://wie.ieee.org/aboutieeewie/">IEEE Women in Engineering</a></div></footer>
+
+         <script src="js/bootstrap.bundle.min.js"></script>
+        <script>
+    					var ctx=document.getElementById("Mi1Gr").getContext("2d");
+    					var MiPGr=new Chart(ctx,
+    						{
+        						type:"bar",
+        						data:
+        						{
+					          labels:['Mujeres','Hombres'],
+					          datasets:
+					          [{
+					            barThickness: 50,
+					              label:'Estudiantes',
+					                  data:[3,9],
+					                  backgroundColor:
+					                  [
+					                      'black',
+					                      'rgb(0,255,255,0.7)'
+						                 ],
+						                 borderColor: 
+					                  [
+					                    'gray',
+					                    'rgb(0,0,255)',
+					                    'rgb(255,0,0)'
+					                  ],
+					                  borderWidth: 2
+						          }]
+						        },
+						        options:
+						        {
+						          scales:
+						          {
+						            yAxes:
+						            [{
+						              ticks:
+						              {
+						                beginAtZero:true
+						              }
+						            }]
+						        }}
+						        });
+
+    					var ctx=document.getElementById("Mi2Gr").getContext("2d");
+					    var MiSGr=new Chart(ctx,
+					    {
+					        type:"polarArea",
+					        data:
+					        {
+					          labels:['Estereotipos','Crianza','Diferencia de talento','Otra'],
+					          datasets:
+					          [{
+					              label:'Areas',
+					              data:[83.3,8.3,0,8.3],
+					              backgroundColor:
+					              [
+					                  'black',
+					                  'gray',
+					                  'gray',
+					                  'cyan'
+					              ],
+					              borderColor: 
+					              [
+					                'rgb(255,0,0)',
+					                'black',
+					                'rgb(0,0,255)',
+					                'rgb(0,0, 0)'
+					              ],
+					              borderWidth: 3
+					          }]
+					        },
+
+					    
+					      });
+
+					    var ctx=document.getElementById("Mi3Gr").getContext("2d");
+					    var MiSGr=new Chart(ctx,
+					    {
+					        type:"radar",
+					        data:
+					        {
+					          labels:['Contacto temprano con la tecnología','Enseñanza básica','Influencia de círculos','Publicidad en redes sociales'],
+					          datasets:
+					          [{					              
+											    label: 'Valor de Importancia',
+											    data: [4, 5, 3, 1],
+											    fill: true,
+											    backgroundColor: 'rgba(255, 99, 132, 0.2)',
+											    borderColor: 'rgb(255, 99, 132)',
+											    pointBackgroundColor: 'rgb(255, 99, 132)',
+											    pointBorderColor: '#fff',
+											    pointHoverBackgroundColor: '#fff',
+											    pointHoverBorderColor: 'rgb(255, 99, 132)'
+					          }]
+					        },
+
+					    
+					     });
+        </script>
+
+
+</body>
 </html>
